@@ -42,21 +42,26 @@ Dataset ini mencakup 20.640 sampel dengan beberapa fitur seperti berikut:
 Dataset ini diunduh dari [link ini](https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.csv). Analisis awal menunjukkan beberapa nilai yang hilang di kolom `total_bedrooms`, yang diatasi dengan imputasi menggunakan median.
 
 Berikut adalah info dataset dan jumlah nilai yang hilang
+
 <img width="328" alt="Screenshot 2025-01-11 at 00 50 05" src="https://github.com/user-attachments/assets/5351e465-db11-4d57-bf96-4e152c20a3e0" />
 
 Visualisasi distribusi target ditunjukkan dari plot di bawah ini
+
 <img width="367" alt="Screenshot 2025-01-11 at 00 53 45" src="https://github.com/user-attachments/assets/b020b1b7-e989-4869-b365-0eb4c37eba7a" />
 
 Matriks korelasi
+
 <img width="482" alt="Screenshot 2025-01-11 at 00 54 24" src="https://github.com/user-attachments/assets/77623ae7-20f5-4582-95d8-cd3f5d5189aa" />
 
 
 ## Data Preparation
 
 1. **Handling Missing Values**: Nilai yang hilang pada kolom `total_bedrooms` diimputasi dengan median.
+
 <img width="1068" alt="Screenshot 2025-01-11 at 00 55 21" src="https://github.com/user-attachments/assets/4d73c599-7734-45cd-9abc-2a5f71a5f2e4" />
    
 2. **Encoding Categorical Variables**: Kolom `ocean_proximity` diubah menjadi variabel dummy menggunakan one-hot encoding.
+   
 <img width="1066" alt="Screenshot 2025-01-11 at 00 55 57" src="https://github.com/user-attachments/assets/4e4ff470-d96f-4d41-88fe-4cb5dd8fd03f" />
 
 3. **Feature Scaling**: Fitur numerik dinormalisasi untuk memastikan skala yang konsisten.
