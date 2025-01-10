@@ -103,7 +103,7 @@ Model dievaluasi menggunakan metrik berikut:
 3. **R-squared (\(R^2\))**:
    Mengukur proporsi variabilitas target yang dapat dijelaskan oleh model.
 
-Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dengan MAE sebesar 22.100, MSE sebesar 65.000, dan \(R^2\) sebesar 0.81.
+Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dengan MAE sebesar 31.639, MSE sebesar 24.047, dan \(R^2\) sebesar 0.81.
 
 ## Kesimpulan
 
