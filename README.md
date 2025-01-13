@@ -77,16 +77,44 @@ Proses ini memastikan data siap untuk digunakan dalam model prediksi.
 
 Dua model digunakan:
 
-1. **Linear Regression**:
-   - Menggunakan semua fitur numerik dan variabel dummy.
-   - Hasil evaluasi: R-squared sebesar 0.64 menunjukkan hubungan linier moderat.
-  
+1. Linear Regression
+
+Linear regression adalah metode statistik yang digunakan untuk memodelkan hubungan linier antara satu atau lebih variabel independen (fitur) dengan variabel dependen (target). Model ini mencoba menemukan garis terbaik (best-fit line) yang meminimalkan jarak kuadrat antara nilai prediksi dan nilai aktual, dikenal sebagai metode Ordinary Least Squares (OLS).
+
+Pada project ini:
+
+Pendekatan: Linear Regression diasumsikan bahwa hubungan antara fitur-fitur seperti median_income, total_rooms, dan population dengan median_house_value bersifat linier.
+
+Keunggulan:
+Mudah diimplementasikan dan diinterpretasikan.
+Memberikan wawasan tentang kontribusi relatif setiap fitur melalui koefisien regresi.
+
+Keterbatasan:
+Tidak mampu menangkap hubungan non-linear yang kompleks antar fitur.
+Rentan terhadap outlier, yang dapat memengaruhi garis regresi.
+Hasil Evaluasi: Model ini memberikan hasil yang cukup baik dengan R^2 di kisaran 0.64, menunjukkan bahwa sekitar 64% variabilitas dalam target dapat dijelaskan oleh fitur. Namun, kinerjanya terbatas karena hubungan kompleks antar fitur tidak dapat ditangkap sepenuhnya.
+
 <img width="958" alt="Screenshot 2025-01-11 at 00 58 55" src="https://github.com/user-attachments/assets/232c4466-836a-43af-b0a3-de55d3afbab9" />
 
 
-2. **Random Forest Regressor**:
-   - Model ensemble dengan parameter default.
-   - Hasil evaluasi: R-squared sebesar 0.81 menunjukkan kinerja yang lebih baik dibandingkan regresi linier.
+2. Random Forest
+
+Random Forest adalah model ensemble berbasis pohon keputusan (Decision Trees). Model ini bekerja dengan membangun sejumlah besar pohon keputusan secara acak pada subset data dan menggabungkan prediksi masing-masing pohon (melalui rata-rata untuk regresi) untuk menghasilkan hasil akhir. Proses ini dikenal sebagai bagging (Bootstrap Aggregating).
+
+Pada Kasus di Atas:
+
+Pendekatan: Random Forest menangkap hubungan kompleks dan non-linear antara fitur-fitur seperti median_income, ocean_proximity, dan population dengan target median_house_value. Setiap pohon mempelajari pola dari subset data yang berbeda, mengurangi overfitting dan meningkatkan generalisasi.
+
+Keunggulan:
+Mampu menangkap hubungan non-linear yang kompleks.
+Tahan terhadap outlier dan kurang rentan terhadap overfitting dibandingkan Decision Tree tunggal.
+Memberikan fitur penting untuk analisis lebih lanjut (feature importance).
+
+Keterbatasan:
+Membutuhkan sumber daya komputasi yang lebih besar dibandingkan Linear Regression.
+Hasil lebih sulit diinterpretasikan dibandingkan model yang lebih sederhana seperti Linear Regression.
+
+Hasil Evaluasi: Random Forest memberikan R^2 sekitar 0.81, menunjukkan bahwa 81% variabilitas target dapat dijelaskan oleh fitur. Metrik MAE dan MSE juga lebih rendah dibandingkan Linear Regression, mengindikasikan prediksi yang lebih akurat.
   
 <img width="912" alt="Screenshot 2025-01-11 at 00 59 26" src="https://github.com/user-attachments/assets/7202ffc9-c08c-4653-bcb3-10fda55d584d" />
 
