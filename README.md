@@ -58,11 +58,11 @@ Matriks korelasi
 
 1. **Handling Missing Values**: Nilai yang hilang pada kolom `total_bedrooms` diimputasi dengan median.
 
-<img width="1068" alt="Screenshot 2025-01-11 at 00 55 21" src="https://github.com/user-attachments/assets/4d73c599-7734-45cd-9abc-2a5f71a5f2e4" />
-   
+<img width="294" alt="Screenshot 2025-01-15 at 16 55 10" src="https://github.com/user-attachments/assets/32b74208-e51c-4132-b2a5-a7b6da1c63f0" />
+
 2. **Encoding Categorical Variables**: Kolom `ocean_proximity` diubah menjadi variabel dummy menggunakan one-hot encoding.
    
-<img width="1066" alt="Screenshot 2025-01-11 at 00 55 57" src="https://github.com/user-attachments/assets/4e4ff470-d96f-4d41-88fe-4cb5dd8fd03f" />
+<img width="459" alt="Screenshot 2025-01-15 at 16 55 52" src="https://github.com/user-attachments/assets/cf93d879-f77f-4e78-a0fc-47a5a2be254c" />
 
 3. **Feature Scaling**: Fitur numerik dinormalisasi untuk memastikan skala yang konsisten.
 
@@ -122,7 +122,7 @@ Hasil Evaluasi: Random Forest memberikan R^2 sekitar 0.81, menunjukkan bahwa 81%
 
 Kelebihan dan kekurangan:
 - Linear Regression: Mudah diinterpretasi namun kurang fleksibel dalam menangkap hubungan non-linear.
-- Random Forest: Lebih akurat namun membutuhkan sumber daya komputasi lebih besar.
+- Random Forest Regressor: Lebih akurat namun membutuhkan sumber daya komputasi lebih besar.
 
 ## Evaluation
 
@@ -144,7 +144,7 @@ Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbai
 
 ## Kesimpulan
 
-Pemodelan Random Forest adalah pilihan terbaik untuk prediksi harga rumah dalam analisis ini. Model ini lebih akurat, stabil, dan mampu menangkap hubungan kompleks antar fitur dibandingkan dengan Regression Tree. Dengan evaluasi yang lebih baik dan hasil yang lebih andal, Random Forest dapat menjadi alat yang efektif untuk memahami faktor-faktor yang memengaruhi harga rumah di distrik-distrik California.
+Pemodelan Random Forest Regressor adalah pilihan terbaik untuk prediksi harga rumah dalam analisis ini. Model ini lebih akurat, stabil, dan mampu menangkap hubungan kompleks antar fitur dibandingkan dengan Regression Tree. Dengan evaluasi yang lebih baik dan hasil yang lebih andal, Random Forest dapat menjadi alat yang efektif untuk memahami faktor-faktor yang memengaruhi harga rumah di distrik-distrik California.
 
 **---Ini adalah bagian akhir laporan---**
 
