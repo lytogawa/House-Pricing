@@ -169,6 +169,7 @@ Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbai
 
 <img width="258" alt="Screenshot 2025-01-15 at 18 27 52" src="https://github.com/user-attachments/assets/c355b115-173e-4e14-a4af-21294fd7f23a" />
 
+
 <img width="289" alt="Screenshot 2025-01-15 at 18 28 40" src="https://github.com/user-attachments/assets/f27fb7bc-e749-4083-b22c-3c84317013ec" />
 
 
