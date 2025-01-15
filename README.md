@@ -68,7 +68,7 @@ Matriks korelasi
 
 <img width="457" alt="Screenshot 2025-01-15 at 16 45 18" src="https://github.com/user-attachments/assets/3ba6284f-ab3a-4b5f-9b76-74ba9da74b6c" />
 
-4. **Pembagian Data: Pada tahap ini data di split menjadi data training dan data test, Dengan perbandingan data training 80% dan data test 20%.
+4. **Pembagian Data**: Pada tahap ini data di split menjadi data training dan data test, Dengan perbandingan data training 80% dan data test 20%.
    
 ```
 # Memisahkan fitur dan target setelah scaling
@@ -165,7 +165,7 @@ Model dievaluasi menggunakan metrik berikut:
 3. **R-squared (\(R^2\))**:
    Mengukur proporsi variabilitas target yang dapat dijelaskan oleh model.
 
-Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dengan MAE sebesar 31.639, MSE sebesar 24.047, dan \(R^2\) sebesar 0.81. Berikut plot hasil harga prediksi dan nilai aktual.
+Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dengan \(R^2\) sebesar 0.81. Berikut plot hasil harga prediksi dan nilai aktual.
 
 <img width="258" alt="Screenshot 2025-01-15 at 18 27 52" src="https://github.com/user-attachments/assets/c355b115-173e-4e14-a4af-21294fd7f23a" />
 
