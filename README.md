@@ -107,8 +107,18 @@ Tidak mampu menangkap hubungan non-linear yang kompleks antar fitur.
 Rentan terhadap outlier, yang dapat memengaruhi garis regresi.
 Hasil Evaluasi: Model ini memberikan hasil yang cukup baik dengan R^2 di kisaran 0.64, menunjukkan bahwa sekitar 64% variabilitas dalam target dapat dijelaskan oleh fitur. Namun, kinerjanya terbatas karena hubungan kompleks antar fitur tidak dapat ditangkap sepenuhnya.
 
-<img width="958" alt="Screenshot 2025-01-11 at 00 58 55" src="https://github.com/user-attachments/assets/232c4466-836a-43af-b0a3-de55d3afbab9" />
+```
+# Membuat model Linear Regression
+model = LinearRegression()
+model.fit(X_train, y_train)
 
+# Membuat model Linear Regression
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Prediksi pada data uji
+y_pred = model.predict(X_test)
+```
 
 2. Random Forest Regressor
 
@@ -129,8 +139,14 @@ Hasil lebih sulit diinterpretasikan dibandingkan model yang lebih sederhana sepe
 
 Hasil Evaluasi: Random Forest memberikan R^2 sekitar 0.81, menunjukkan bahwa 81% variabilitas target dapat dijelaskan oleh fitur. Metrik MAE dan MSE juga lebih rendah dibandingkan Linear Regression, mengindikasikan prediksi yang lebih akurat.
   
-<img width="912" alt="Screenshot 2025-01-11 at 00 59 26" src="https://github.com/user-attachments/assets/7202ffc9-c08c-4653-bcb3-10fda55d584d" />
+```
+# Inisialisasi model Random Forest
+rf_model = RandomForestRegressor(random_state=42)
+rf_model.fit(X_train, y_train)
 
+# Prediksi pada data uji
+y_pred_rf = rf_model.predict(X_test)
+```
 
 Kelebihan dan kekurangan:
 - Linear Regression: Mudah diinterpretasi namun kurang fleksibel dalam menangkap hubungan non-linear.
@@ -151,7 +167,9 @@ Model dievaluasi menggunakan metrik berikut:
 
 Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dengan MAE sebesar 31.639, MSE sebesar 24.047, dan \(R^2\) sebesar 0.81. Berikut plot hasil harga prediksi dan nilai aktual.
 
-<img width="382" alt="Screenshot 2025-01-13 at 14 59 40" src="https://github.com/user-attachments/assets/6a23ffaf-e980-46e8-9961-7121ee2a545c" />
+<img width="258" alt="Screenshot 2025-01-15 at 18 27 52" src="https://github.com/user-attachments/assets/c355b115-173e-4e14-a4af-21294fd7f23a" />
+
+<img width="289" alt="Screenshot 2025-01-15 at 18 28 40" src="https://github.com/user-attachments/assets/f27fb7bc-e749-4083-b22c-3c84317013ec" />
 
 
 ## Kesimpulan
