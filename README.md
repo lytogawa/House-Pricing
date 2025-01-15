@@ -97,9 +97,9 @@ Hasil Evaluasi: Model ini memberikan hasil yang cukup baik dengan R^2 di kisaran
 <img width="958" alt="Screenshot 2025-01-11 at 00 58 55" src="https://github.com/user-attachments/assets/232c4466-836a-43af-b0a3-de55d3afbab9" />
 
 
-2. Random Forest
+2. Random Forest Regressor
 
-Random Forest adalah model ensemble berbasis pohon keputusan (Decision Trees). Model ini bekerja dengan membangun sejumlah besar pohon keputusan secara acak pada subset data dan menggabungkan prediksi masing-masing pohon (melalui rata-rata untuk regresi) untuk menghasilkan hasil akhir. Proses ini dikenal sebagai bagging (Bootstrap Aggregating).
+Random Forest Regressor adalah implementasi khusus dari Random Forest yang digunakan untuk masalah regresi, di mana target variabelnya adalah nilai kontinu. Pada kasus ini, setiap pohon menghasilkan prediksi numerik, dan Random Forest Regressor menggabungkan hasil prediksi dengan cara menghitung rata-rata dari semua pohon.
 
 Pada Kasus di Atas:
 
