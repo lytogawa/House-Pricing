@@ -70,7 +70,19 @@ Matriks korelasi
 
 4. **Pembagian Data: Pada tahap ini data di split menjadi data training dan data test, Dengan perbandingan data training 80% dan data test 20%.
    
-<img width="298" alt="Screenshot 2025-01-15 at 16 46 16" src="https://github.com/user-attachments/assets/a14aae7f-ade3-446e-86cd-5254f368497d" />
+```
+# Memisahkan fitur dan target setelah scaling
+X = scaled_data.drop('median_house_value', axis=1)
+y = scaled_data['median_house_value']
+```
+
+```
+# Membagi dataset menjadi data latih dan data uji
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
+
+<img width="181" alt="Screenshot 2025-01-15 at 18 23 42" src="https://github.com/user-attachments/assets/babbd3ba-f884-4b93-8329-57777cf8a95a" />
+
 
 Proses ini memastikan data siap untuk digunakan dalam model prediksi.
 
