@@ -66,10 +66,11 @@ Matriks korelasi
 
 3. **Feature Scaling**: Fitur numerik dinormalisasi untuk memastikan skala yang konsisten.
 
+<img width="457" alt="Screenshot 2025-01-15 at 16 45 18" src="https://github.com/user-attachments/assets/3ba6284f-ab3a-4b5f-9b76-74ba9da74b6c" />
+
 4. **Pembagian Data: Pada tahap ini data di split menjadi data training dan data test, Dengan perbandingan data training 80% dan data test 20%.
    
- <img width="1074" alt="Screenshot 2025-01-13 at 14 55 28" src="https://github.com/user-attachments/assets/31b4d827-2f58-43e7-bfb1-f5c3b1f3f56b" />
-
+<img width="298" alt="Screenshot 2025-01-15 at 16 46 16" src="https://github.com/user-attachments/assets/a14aae7f-ade3-446e-86cd-5254f368497d" />
 
 Proses ini memastikan data siap untuk digunakan dalam model prediksi.
 
