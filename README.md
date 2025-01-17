@@ -165,12 +165,13 @@ Model dievaluasi menggunakan metrik berikut:
 3. **R-squared (\(R^2\))**:
    Mengukur proporsi variabilitas target yang dapat dijelaskan oleh model.
 
-Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dengan \(R^2\) sebesar 0.81. Berikut plot hasil harga prediksi dan nilai aktual.
+Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dengan \(R^2\) sebesar 0.81. 
 
-<img width="258" alt="Screenshot 2025-01-15 at 18 27 52" src="https://github.com/user-attachments/assets/c355b115-173e-4e14-a4af-21294fd7f23a" />
+<img width="488" alt="Screenshot 2025-01-17 at 14 09 07" src="https://github.com/user-attachments/assets/d2a8ab51-dab9-416e-b772-cde49c55ca5d" />
 
+Berikut plot hasil harga prediksi dan nilai aktual.
 
-<img width="289" alt="Screenshot 2025-01-15 at 18 28 40" src="https://github.com/user-attachments/assets/f27fb7bc-e749-4083-b22c-3c84317013ec" />
+<img width="418" alt="Screenshot 2025-01-17 at 14 09 40" src="https://github.com/user-attachments/assets/e3ae115f-1df0-409b-bf00-86b406149639" />
 
 
 ## Kesimpulan
