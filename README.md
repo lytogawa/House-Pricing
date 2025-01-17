@@ -165,7 +165,7 @@ Model dievaluasi menggunakan metrik berikut:
 3. **R-squared (\(R^2\))**:
    Mengukur proporsi variabilitas target yang dapat dijelaskan oleh model.
 
-Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dengan \(R^2\) sebesar 0.81. 
+Hasil evaluasi menunjukkan bahwa Random Forest Regressor memberikan hasil terbaik dan berikut adalah tabel perbandingan nilai aktual dengan linear regression dan random forest regressor.
 
 <img width="488" alt="Screenshot 2025-01-17 at 14 09 07" src="https://github.com/user-attachments/assets/d2a8ab51-dab9-416e-b772-cde49c55ca5d" />
 
